@@ -1,0 +1,65 @@
+@use "../custom" as c;
+
+//Developer notes:  Separated card styles (that are not typography) here.
+//I removed some bootstrap classes from the markup and chose to add styles manually
+//to allow for an easy transfer of styles between the two cards by nesting the
+//read only card with the form card. I did not nest all styles to help
+//readability.
+
+.card {
+  background-color: c.$light;
+  max-width: 900px;
+  border-width: 0;
+  border-radius: 10px;
+  @media (max-width: 576px) {
+    min-width: 99%;
+  }
+  &.read {
+    background-color: c.$primary;
+    color: c.$white;
+  }
+}
+
+.card-body {
+  padding: var(--theme-spacer-5);
+  @media (max-width: 576px) {
+    padding-top: var(--theme-spacer-5);
+    padding-inline: var(--theme-spacer-1);
+  }
+}
+
+.card-title {
+  border-bottom-style: solid;
+  border-color: c.$gray-400;
+  margin-bottom: var(--theme-spacer-3);
+  padding-bottom: var(--theme-spacer-4);
+  @media (max-width: 576px) {
+    border-bottom: none;
+
+    //This allows the bottom border to not take up the
+    //full size of the container in mobile view to match design.
+    &::after {
+      display: block;
+      content: "";
+      position: relative;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 90%;
+      border-bottom: 2px solid c.$gray-400;
+      margin: 0 auto;
+      padding: 4px 0px;
+    }
+  }
+
+  //this does the same for the read only form
+  &.read {
+    border-color: c.$white;
+
+    @media (max-width: 576px) {
+      &::after {
+        border-bottom: 2px solid c.$white;
+      }
+    }
+  }
+}

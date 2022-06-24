@@ -1,0 +1,10 @@
+@use'../custom' as *;
+
+//Added bootstrap default spacers to scss variables for consistent units throughout.
+//This also is where I would add additional spacer values if necessary.
+
+:root {
+    @each $spacer, $value in $spacers {
+        --theme-spacer-#{$spacer}: #{$value};
+    }
+}

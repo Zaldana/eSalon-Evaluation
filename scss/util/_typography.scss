@@ -1,0 +1,52 @@
+ @use'../custom' as c;
+
+ //This partial is for the different changes I have made to the 
+ //typography in the build.
+
+ p{
+    margin-bottom: var(--theme-spacer-2);
+    margin-right:  var(--theme-spacer-2); 
+    &.read{
+      margin: 0;
+    }
+}
+
+label{
+       margin-bottom: var(--theme-spacer-2); 
+}
+ 
+h1.card-title {
+    font-family: c.$heading-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: c.$primary;
+
+    @media (max-width: 576px) {
+      text-align: center;
+        font-size: 2.5rem;
+    }
+
+    &.read {
+      color: c.$white;
+    }
+ }
+
+ .form-check-label {
+    color: c.$gray-600
+ }
+
+  .form-control.read {
+
+   &::placeholder {
+      color: c.$primary;
+      font-family: c.$heading-font;
+      text-transform: capitalize;
+   }    
+}
+
+#gender {
+ &::placeholder {
+     text-align: center;
+   }    
+}

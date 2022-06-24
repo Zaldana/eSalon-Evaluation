@@ -1,0 +1,9 @@
+//This partial sets the spacing for the image in desktop and mobile view
+img.rounded-circle.d-block {
+    margin-top: var(--theme-spacer-2) ;
+    padding-inline: var(--theme-spacer-4);
+     @media (max-width: 576px) {
+    padding-inline: var(--theme-spacer-5);
+    }
+
+}

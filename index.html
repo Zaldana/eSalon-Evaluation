@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Puppy Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Prompt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container main">
+    <!-- Card -->
+    <div class="card shadow">
+      <div class="card-body">
+        <!-- Card Title -->
+        <h1 class="card-title">Puppy Profile</h1>
+        <div class="row align-items-start ">
+          <!-- Left Column -->
+          <div class="col-sm-4">
+            <div class="row align-items-start ">
+              <img src="./assets/images/kylo.png" class="rounded-circle d-block" alt="dog in snow">
+            </div>
+            <div class="row align-items-start ">
+              <button type="button" class="btn btn-link text-decoration-none">Edit</button>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="col-sm-8 px-4">
+            <!-- form start -->
+            <form action="read.html" method="GET">
+              <!-- Name -->
+              <div class="row mb-3">
+                <label for="name" class="form-label">Name: </label>
+                <input name="name" type="name" class="form-control border-primary" id="name" aria-describedby="name" />
+              </div>
+              <!-- Date of Birth dropdown-->
+              <div class="row mb-3">
+                <p>Date of Birth:</p>
+                <select name="month" id="month" class="form-select col border-primary" aria-label="Month select">
+                </select>
+                <select name="day" id="day" class="form-select col border-primary" aria-label="Day select">
+                </select>
+                <select name="year" id="year" class="form-select col border-primary" aria-label="Year select">
+                  <option selected>Year</option>
+                </select>
+              </div>
+              <!-- Gender checkboxes -->
+              <div class="d-flex-row mb-3">
+                <p class="d-inline">Gender: </p>
+                <div class="form-check-inline mb-4">
+                  <input name="gender" value="female" class="form-check-input border-primary" type="checkbox" value=""
+                    id="femaleCheck">
+                  <label class="form-check-label" for="femaleCheck">
+                    Female
+                  </label>
+                </div>
+                <div class="form-check-inline mb-4">
+                  <input name="gender" value="male" class="form-check-input border-primary" type="checkbox" value=""
+                    id="maleCheck">
+                  <label class="form-check-label" for="maleCheck">
+                    Male
+                  </label>
+                </div>
+              </div>
+              <!-- Additional Notes Box -->
+              <div class="row mb-3">
+                <label for="textarea">Misc. Notes:</label>
+                <textarea name="notes" class="form-control border-primary" id="textarea" rows="4"
+                  placeholder="Add additional notes here"></textarea>
+              </div>
+              <!-- submit and cancel buttons -->
+              <div class="d-flex flex-row-reverse mb-3">
+                <button type="submit" class="btn btn-primary text-white btn-lg" value="Submit">Submit</button>
+                <button type="reset" class="btn cancel btn-outline-secondary btn-lg">Cancel</button>
+              </div>
+            </form>
+            <!-- form end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card end -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

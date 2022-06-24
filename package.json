@@ -1,0 +1,18 @@
+{
+  "name": "html-sass-evaluation",
+  "version": "1.0.0",
+  "description": "Requirements Make a page using the provided Figma design that allows the user to input their puppy’s profile information. On submit, the displayed information will show on a readonly page. ● Note that the input background color changes color on focus ● Month, Day, and Year are numeric inputs ● Error validation is optional. If you have time and/or you wish to have some extra fun, go for it. Guidelines ● Please put your code in a public Github repository for us to look at. ● Use SASS to build the CSS ● Use Bootstrap for your UI framework as much as possible ● Please explain any decisions you make, and the rationale behind them, in comments throughout the code. Think of these as presentation notes you might make, if you were to present this to us in person. ● Use the internet if you need it. We all know that even the best developers in the world spend a good portion of their day searching Google and looking at documentation, so feel free. ● We kept this exercise unspecific to our brands or internal projects so have fun with it. Spend as much time on it as you wish. However, it shouldn’t be necessary to spend too much time on it for the purposes of our evaluation. Note in your repository README how long it took you to do this exercise. Final Note There are many different kinds of developers, and lots of different specialties. We'll be evaluating your work by looking at code quality, design, readability, functionality, documentation, and decision-making. Do the best you can, but don't get in your head too much. We just want to get to know you as a developer. If you have any questions about this exercise, please feel free to reach out to cdo@esalon.com. Thanks for taking the time to participate in this evaluation exercise.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "author": "Ruben Zaldana",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "postcss-cli": "^9.1.0"
+  }
+}

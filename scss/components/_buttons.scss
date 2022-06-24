@@ -1,0 +1,14 @@
+ @use'../custom' as *;
+
+//Button style changes
+button {
+    
+    text-transform: uppercase;
+
+    &.cancel {
+        color: $secondary;
+        text-transform: capitalize;
+        margin-right: var(--theme-spacer-2);
+    }
+}
+ //note to self: button row is reversed

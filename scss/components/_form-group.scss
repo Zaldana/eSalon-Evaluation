@@ -1,0 +1,20 @@
+ @use "../custom" as c;
+
+ //This partial changes the colors of the form to match the design
+.form-control {
+    resize: none;
+    &:focus {
+        background-color: c.$primary;
+        color: c.$white;
+    }
+    &.read {
+        &:focus {
+             background-color: c.$white;
+        }
+    }
+}
+
+.form-select.col.border-primary {
+    color: c.$secondary;
+    margin-right: var(--theme-spacer-1);
+}

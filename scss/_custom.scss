@@ -1,0 +1,60 @@
+//This partial is where I have modified bootstrap's global variables
+ //so I could have a more efficient starting point and save time
+//throughout the build. To help visualize the changes that I 
+//have made to the Bootstrap defaults
+//I added the theming-kit html that shows all the changes that I made.
+
+//default white and grey colors not changed just pulled out 
+// as a reminder of the values and names.
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+//Theme color from design
+$dark-teal:    #32849B;
+
+//Overrides the default primary and secondary bootstrap  color variables
+$primary: $dark-teal;
+$secondary: $gray-600;
+
+//Remove the default left and right margin from "Row" to line up form labels correctlly.
+$grid-gutter-width: 0;
+
+//Fonts
+//I did not have access to the fonts in the design, these 2 fonts
+//were the closest I could find.
+$font: 'Prompt', sans-serif;
+$heading-font: 'Arvo', serif;
+
+//Default font override
+$font-family-sans-serif: $font; 
+
+//lg Button style override
+$btn-font-size-lg: .9rem;
+$btn-padding-y-lg: .8rem;
+$btn-padding-x-lg: 1.7rem;
+
+//Link button style override
+$btn-link-color: $secondary;
+
+//Form select override 
+$form-select-indicator-color: $primary;
+$form-select-padding-y: .8rem;
+$form-select-font-size: .75rem;
+
+//Input box verticle padding override
+$input-btn-padding-y: .6rem;
+
+//Import Bootstrap
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
